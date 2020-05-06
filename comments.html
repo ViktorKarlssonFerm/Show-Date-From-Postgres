@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Comments</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    </head>
+    <body>
+        <div class="ui container">
+            <div class="ui comments">
+                <h3 class="ui dividing header">Comments</h3>
+                <div id="comment-section">
+
+                </div>
+            </div>
+            <div class="ui success message hidden">
+              <i class="close icon"></i>
+              <div class="header">
+                Your comment has been successfully sent.
+              </div>
+            </div>
+            <div class="ui warning message hidden">
+              <i class="close icon"></i>
+              <div class="header">
+                  Could not send your comment.
+              </div>
+            </div>
+            <div id="comment-form" class="ui reply form">
+                <input type="hidden" name="user_id" value="1">
+                <div class="field">
+                    <textarea name="text" class="new-comment"></textarea>
+                </div>
+                <div id="create-comment" class="ui blue labeled submit icon button">
+                    <i class="icon edit"></i> Add comment
+                </div>
+            </div>
+        </div>
+    <script src="{{static_url('functions.js')}}"></script>
+    <script src="{{static_url('api.js')}}"></script>
+    </body>
+</html>

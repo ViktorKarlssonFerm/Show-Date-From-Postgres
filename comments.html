@@ -13,7 +13,7 @@
             <div class="ui comments">
                 <h3 class="ui dividing header">Comments</h3>
                 <div id="comment-section">
-
+                    blahbbla
                 </div>
             </div>
             <div class="ui success message hidden">
@@ -29,13 +29,15 @@
               </div>
             </div>
             <div id="comment-form" class="ui reply form">
-                <input type="hidden" name="user_id" value="1">
-                <div class="field">
-                    <textarea name="text" class="new-comment"></textarea>
-                </div>
-                <div id="create-comment" class="ui blue labeled submit icon button">
-                    <i class="icon edit"></i> Add comment
-                </div>
+                <form>
+                    <input type="hidden" name="user_name" value="Bob">
+                    <div class="field">
+                        <textarea name="text" class="new-comment"></textarea>
+                    </div>
+                    <div id="create-comment" class="ui blue labeled submit icon button">
+                        <i class="icon edit"></i> Add comment
+                    </div>
+                </form>
             </div>
         </div>
     <script src="{{static_url('functions.js')}}"></script>
